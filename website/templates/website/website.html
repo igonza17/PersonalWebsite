@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Ivan</title>
-    <link rel="stylesheet" href="/static/example1.css">
+    <link rel="stylesheet" href="/static/website/example1.css">
     <style>img{
         border-radius: 8px;
         width:30%;
@@ -14,24 +14,27 @@
 </head>
 <body>
 <h1>Ivan Gonzalez Website </h1>
-<a href="https://ibb.co/LYpHSVz"><img src="https://i.ibb.co/DzKT40D/IMG-0581.jpg" alt="IMG-0581" border="0"></a>
-<p><b>About Me</b> <br>Hello class, my name is Ivan Gonzalez and I'm currently located in Kennesaw Ga.
+<a><img src="/static/website/profilePic.jpeg" alt="IMG-0581"  style="float:left; padding-right: 50px;"></a>
+
+    <p><b>About Me</b> <br>Hello visitor, my name is Ivan Gonzalez and I'm currently living in Kennesaw Ga.
     I'm a senior completing Computer science with interests in big data, A.I, and machine learning.
-    I'm taking this class because its required and also web development is a very important subject to learn.
     My career plans involve becoming a software engineer or data analyst.
     Outside of school, I like to do gaming, travel, exercise, and vibing out to music.</p>
-<form action="http://127.0.0.1:8080">
+<p><b>Skills</b> <br>I'm familiar with a wide array of tools like Java, C#, C++, Python,(HTML,CSS,JavaScript), SQL, Django framework, OOP programming, AGILE.
+Looking forward to working with a company that offers growth, travel, work-life balance, and awesome coworkers to work with! </p>
+
+<form action="http://127.0.0.1:8000">
     <input type="submit" value="Home" />
 </form>
 <form>
-    <input type = "button" onclick="insertButtons()" name = "Assignment 2" value = "Assignment 2" />
+    <input type = "button" onclick="insertButtons()" name = "Assignment 2" value = "Change Background And Font Color" />
 </form>
 
-<form action="http://127.0.0.1:8080/weather">
-    <input type="submit" value="Assignment 5" />
+<form action="http://127.0.0.1:8000/weather">
+    <input type="submit" value="Weather In Kennesaw" />
 </form>
-<form action="http://127.0.0.1:8080/final">
-    <input type="submit" value="Final" />
+<form action="http://127.0.0.1:8000/final">
+    <input type="submit" value="My Academic Classes And Grades" />
 </form>
 <p id="text"></p>
 <table id="sampleTable" border="1">
@@ -54,7 +57,7 @@
     suggest3.addEventListener("mouseout", suggestive2);
 
     function weather() {
-        window.open("http://127.0.0.1:8080/weather");
+        window.open("http://127.0.0.1:8000/weather");
 
     }
     function insertButtons() {
