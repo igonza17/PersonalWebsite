@@ -1,0 +1,34 @@
+
+<link rel="stylesheet" href="/static/example1.css">
+
+{% block content  %}
+    <table style="width:100%">
+        <tr>
+            <th>City</th>
+            <th>Current Temperature</th>
+            <th>Atmospheric Pressure</th>
+            <th>Wind Speed</th>
+            <th>Wind Direction</th>
+            <th>Time of Report</th>
+
+        </tr>
+{% if city and temp and degree and speed and pressure and time %}
+    <tr>
+    <th>{{ city }}</th>
+
+        <th>{{ temp }}</th>
+
+        <th>{{ degree }}</th>
+
+        <th>{{ speed }}</th>
+
+        <th>{{ pressure }}</th>
+
+        <th>{{ time }}</th>
+    </tr>
+{% endif %}
+    {% endblock %}
+</table>
+<form action="http://127.0.0.1:8080">
+    <input type="submit" value="Go back to my website" />
+</form>

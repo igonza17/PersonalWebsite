@@ -1,0 +1,42 @@
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 13px;
+    background: white;
+    margin: 8px;
+}
+h1 {
+    font-family: Georgia;
+    font-size: 19px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    border-bottom: 1px solid black
+}
+p {
+    width:40%;
+    float: left;
+    font-family: Helvetica;
+
+    font-size: 19px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+}
+
+form {
+    width:30%;
+    float: bottom;
+    font-family: Helvetica;
+
+    font-size: 19px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+}
+.shaded {
+    background: #d0d0ff;
+}
+
+.float{
+    float:left;
+    width: 200px;
+}

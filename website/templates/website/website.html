@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ivan</title>
+    <link rel="stylesheet" href="/static/example1.css">
+    <style>img{
+        border-radius: 8px;
+        width:30%;
+        float: left;
+    }
+    </style>
+</head>
+<body>
+<h1>Ivan Gonzalez Website </h1>
+<a href="https://ibb.co/LYpHSVz"><img src="https://i.ibb.co/DzKT40D/IMG-0581.jpg" alt="IMG-0581" border="0"></a>
+<p><b>About Me</b> <br>Hello class, my name is Ivan Gonzalez and I'm currently located in Kennesaw Ga.
+    I'm a senior completing Computer science with interests in big data, A.I, and machine learning.
+    I'm taking this class because its required and also web development is a very important subject to learn.
+    My career plans involve becoming a software engineer or data analyst.
+    Outside of school, I like to do gaming, travel, exercise, and vibing out to music.</p>
+<form action="http://127.0.0.1:8080">
+    <input type="submit" value="Home" />
+</form>
+<form>
+    <input type = "button" onclick="insertButtons()" name = "Assignment 2" value = "Assignment 2" />
+</form>
+
+<form action="http://127.0.0.1:8080/weather">
+    <input type="submit" value="Assignment 5" />
+</form>
+<form action="http://127.0.0.1:8080/final">
+    <input type="submit" value="Final" />
+</form>
+<p id="text"></p>
+<table id="sampleTable" border="1">
+</table>
+
+<script>
+    window.addEventListener("resize", function () {
+        document.getElementById("text").innerHTML = "I can see you resized the size of your browser window";
+    });
+    var suggest = document.getElementById("button3");
+    suggest.addEventListener("mouseover", suggestive);
+    suggest.addEventListener("mouseout", suggestive2);
+
+    var suggest2 = document.getElementById("button4");
+    suggest2.addEventListener("mouseover", suggestive);
+    suggest2.addEventListener("mouseout", suggestive2);
+
+    var suggest3 = document.getElementById("button5");
+    suggest3.addEventListener("mouseover", suggestive);
+    suggest3.addEventListener("mouseout", suggestive2);
+
+    function weather() {
+        window.open("http://127.0.0.1:8080/weather");
+
+    }
+    function insertButtons() {
+        var button = document.createElement("button");
+        button.innerHTML = "Blue Font";
+
+        var button2 = document.createElement("button");
+        button2.innerHTML = "Red Font";
+
+        var body = document.getElementById("sampleTable");
+        body.appendChild(button);
+
+        var body2 = document.getElementById("sampleTable");
+        body2.appendChild(button2);
+
+        button.addEventListener("click", function(){
+            document.body.style.color = "blue";
+        })
+
+        button2.addEventListener("click", function(){
+            document.body.style.color = "red";
+        })
+
+
+        var button3 = document.createElement("button");
+        button3.innerHTML = "Black Background";
+
+        var button4 = document.createElement("button");
+        button4.innerHTML = "Turquoise Background";
+
+        var body3 = document.getElementById("sampleTable");
+        body3.appendChild(button3);
+
+        var body4 = document.getElementById("sampleTable");
+        body4.appendChild(button4);
+
+        button3.addEventListener("click", function(){
+            document.body.style.backgroundColor = "black";
+        })
+
+        button4.addEventListener("click", function(){
+            document.body.style.backgroundColor = "turquoise";
+        })
+    }
+
+    function suggestive(){
+        document.getElementById("text").innerHTML = "Assignment is still yet to be completed!"
+    }
+    function suggestive2(){
+        document.getElementById("text").innerHTML = ""
+    }
+</script>
+<footer>
+    Created by Ivan Gonzalez 2020 &#169; - All Rights Reserved
+</footer>
+</body>
+</html>

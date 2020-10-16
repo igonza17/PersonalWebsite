@@ -1,0 +1,41 @@
+{% block content  %}
+    <table style="width:100%">
+
+
+    {% for Courses in api1 %}
+    <tr>
+    <th>{{ Courses.course_id }}</th>
+
+        <th>{{ Courses.department }}</th>
+
+        <th>{{ Courses.course_number }}</th>
+
+        <th>{{ Courses.course_name }}</th>
+
+        <th>{{ Courses.semester }}</th>
+
+        <th>{{ Courses.sem_year }}</th>
+
+        <th>{{ Courses.grade }}</th>
+    </tr>
+{% endfor %}
+{% endblock %}
+</table>
+<form action="http://127.0.0.1:8080/api1">
+    <input type="submit" value="API 1" />
+</form>
+<form action="http://127.0.0.1:8080/api2">
+    <input type="submit" value="API 2" />
+</form>
+<form action="http://127.0.0.1:8080/api3">
+    <input type="submit" value="API 3" />
+</form>
+<form action="http://127.0.0.1:8080/api4">
+    <input type="submit" value="API 4" />
+</form>
+<form action="http://127.0.0.1:8080/api5">
+    <input type="submit" value="API 5" />
+</form>
+<form action="http://127.0.0.1:8080">
+    <input type="submit" value="Go back to my website" />
+</form>

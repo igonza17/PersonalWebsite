@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/static/example1.css">
+
+{% block content  %}
+    <table style="width:100%">
+        <tr>
+            <th>Course ID</th>
+            <th>Department</th>
+            <th>Course Number</th>
+            <th>Course Name</th>
+            <th>Course Semester</th>
+            <th>Course Year</th>
+            <th>Course Grade</th>
+        </tr>
+
+    {% for Courses in data %}
+    <tr>
+    <th>{{ Courses.course_id }}</th>
+
+        <th>{{ Courses.department }}</th>
+
+        <th>{{ Courses.course_number }}</th>
+
+        <th>{{ Courses.course_name }}</th>
+
+        <th>{{ Courses.semester }}</th>
+
+        <th>{{ Courses.sem_year }}</th>
+
+        <th>{{ Courses.grade }}</th>
+    </tr>
+{% endfor %}
+{% endblock %}
+</table>
+
+<form action="http://127.0.0.1:8080">
+    <input type="submit" value="Go back to my website" />
+</form>
