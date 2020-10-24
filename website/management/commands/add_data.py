@@ -10,16 +10,16 @@ class Command(BaseCommand):
         course_data = [
             [1,'MATH', '1190', 'Calculus I', 'Summer', '2018', 'A'],
             [2,'CSE', '1322', 'Programming and Problem Solving', 'Fall', '2018', 'B'],
-            [3,'CSE', '1322L', 'Programming and Problem Solving Lab', 'Fall', '2018', 'C'],
+            [3,'CSE', '1322L', 'Programming and Problem Solving Lab', 'Fall', '2018', 'A'],
             [4,'CS', '3305', 'Data Structures', 'Spring', '2019', 'A'],
             [5,'CS', '3503', 'Computer Organization and Architecture', 'Spring', '2019', 'B'],
-            [6,'MATH', '2202', 'Calculus II', 'Spring', '2019', 'C'],
+            [6,'MATH', '2202', 'Calculus II', 'Spring', '2019', 'B'],
             [7,'MATH', '2345', 'Discrete Mathematics', 'Fall', '2018', 'A'],
             [8,'CS', '3410', 'Introduction to Database Systems', 'Spring', '2020', 'B'],
-            [9,'SWE', '3313', 'Introduction to Software Engineering', 'Spring', '2020', 'C'],
+            [9,'SWE', '3313', 'Introduction to Software Engineering', 'Spring', '2020', 'A'],
             [10,'CSE', '3801', 'Professional Practices and Ethics', 'Spring', '2020', 'A'],
-            [11,'CS', '3502', 'Operating Systems', 'Fall', '2020', 'B'],
-            [12, 'CS', '4720', 'Internet Programming', 'Fall', '2020', 'C'],
+            [11,'CS', '3502', 'Operating Systems', 'Fall', '2020', 'A'],
+            [12, 'CS', '4720', 'Internet Programming', 'Fall', '2020', 'A'],
         ]
 
         for ad in course_data:
